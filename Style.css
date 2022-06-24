@@ -68,67 +68,119 @@ nav ul li a{
     align-items: center;
     grid-area: presupuesto;
 }
+.presupuesto a img{
+    max-width: 100%;
+}
 /*Listas de eleccion con grid; index*/
-.aire{
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+.fueraAire{
     display: flex;
     justify-content: end;
+}
+.aire{
     grid-area: aire;
+    max-width: fit-content;
+}
+.fueraHeladera{
+    display: flex;
+    justify-content: center;
 }
 .heladera{
-    display: flex;
-    justify-content: center;
     grid-area: heladera;
+    max-width: fit-content;
+}
+.fueraFreezer{
+    display: flex;
+    justify-content: start;
 }
 .freezer{
-    display: flex;
-    justify-content: start;
     grid-area: freezer;
+    max-width: fit-content;
 }
+.fueraCamara{
+    display: flex;
+    justify-content: end;}
 .camara{
-    display: flex;
-    justify-content: end;
     grid-area: camara;
+    max-width: max-content;
 }
+.fueraAuto{
+    display: flex;
+    justify-content: center;}
 .auto{
-    display: flex;
-    justify-content: center;
     grid-area: auto;
+    max-width: max-content;
 }
-.vertodo{
+.fueraVertodo{
     display: flex;
-    justify-content: start;
+    justify-content: start;}
+.vertodo{
     grid-area: vertodo;
+    max-width: max-content;
 }
 /*Eleccion aires; flex*/
 .a25k{
-    grid-area: a25k;
     display: flex;
     justify-content: end;
+}
+.dentro25k{
+    grid-area: a25k;
+    max-width: fit-content;
 }
 .a3k{
     display: flex;
     justify-content: center;
+}
+.dentro3k{
     grid-area: a3k;
+    max-width: fit-content;
 }
 .a35k{
     display: flex;
     justify-content: start;
+}
+.dentro35k{
     grid-area: a35k;
+    max-width: fit-content;
 }
 .a4k{
     display: flex;
     justify-content: end;
+}
+.dentro4k{
     grid-area: a4k;
+    max-width: fit-content;
 }
 .a5k{
     display: flex;
     justify-content: center;
+}
+.dentro5k{
     grid-area: a5k;
+    max-width: fit-content;
 }
 .a6k{
     display: flex;
     justify-self: start;
+
+}
+.dentro6k{
     grid-area: a6k;
+    max-width: fit-content;
 }
 /*Sobre nosotros;grid*/
 .nosotros1{
@@ -239,28 +291,28 @@ nav ul li a{
         width: 134px;
         height: 105px;
     }
-    .aire{
+    .fueraAire{
         justify-content: flex-end;
     }
     .heladera img{
         width: 134px;
         height: 105px;
     }
-    .heladera{
+    .fueraHeladera{
         justify-content: flex-start;
     }
     .freezer img{
         width: 134px;
         height: 105px;
     }
-    .freezer{
+    .fueraFreezer{
         justify-content: end;
     }
     .camara img{
         width: 134px;
         height: 105px;
     }
-    .camara{
+    .fueraCamara{
         justify-content: flex-start;
     }
     .auto img{
@@ -268,14 +320,14 @@ nav ul li a{
         height: 105px;
         justify-content: flex-end;
     }
-    .auto{
+    .fueraAuto{
         justify-content: flex-end;
     }
     .vertodo img{
         width: 134px;
         height: 105px;
     }
-    .vertodo{
+    .fueraVertodo{
         justify-content: flex-start;
     }
     .footer a img{

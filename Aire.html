@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Refrigeracion LG</title>
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
@@ -12,11 +14,13 @@
         <nav class="nav">
             <img class="logo" src="./img/Group 14.png" alt="">
             <ul class="">
-                <li><a class="botonesini" href="/index.html">Inicio</a></li>
-                <li><a class="botonesini" href="/FAQ.html">FAQ</a> </li>
-                <li><a class="botonesini" href="/Nosotros_1.html">Nosotros</a></li>
-                <li><a class="login" href="/login.html">LOG IN</a></li>
-                <li><a class="login" href="#">SIGN IN</a></li>
+                <li><a class="botonesini  hvr-grow" href="/index.html">Inicio</a></li>
+                <li><a class="botonesini  hvr-grow" href="/FAQ.html">FAQ</a> </li>
+                <li><a class="botonesini  hvr-grow" href="/Nosotros_1.html">Nosotros</a></li>
+            </ul>
+            <ul>
+                <li><a class="login  hvr-grow" href="/login.html">LOG IN</a></li>
+                <li><a class="login  hvr-grow" href="#">SIGN IN</a></li>
             </ul>
         </nav>
     </header>
@@ -24,15 +28,19 @@
         <div class="presupuesto">
             <a href="#"><img src="./img/Group 7.png" alt=""></a>
         </div>
-            <div class="a25k"><a href="#"><img src="./img/aires/2500.png" alt=""></a></div>
-            <div class="a3k"><a href="#"><img src="/img/aires/3000.png" alt=""></a></div>
-            <div class="a35k"><a href="#"><img src="/img/aires/3500.png" alt=""></a></div>
-            <div class="a4k"><a href="#"><img src="/img/aires/4k.png" alt=""></a></div>
-            <div class="a5k"><a href="#"><img src="/img/aires/5k.png" alt=""></a></div>
-            <div class="a6k"><a href="#"><img src="/img/aires/+6k.png" alt=""></a></div>
+            <div class="a25k"><a class="dentro25k hvr-grow" href="#"><img src="./img/aires/2500.png" alt=""></a></div>
+            <div class="a3k"><a class="dentro3k hvr-grow" href="#"><img src="/img/aires/3000.png" alt=""></a></div>
+            <div class="a35k"><a class="dentro35k hvr-grow" href="#"><img src="/img/aires/3500.png" alt=""></a></div>
+            <div class="a4k"><a class="dentro4k  hvr-grow" href="#"><img src="/img/aires/4k.png" alt=""></a></div>
+            <div class="a5k"><a class="dentro5k hvr-grow" href="#"><img src="/img/aires/5k.png" alt=""></a></div>
+            <div class="a6k"><a class="dentro6k hvr-grow" href="#"><img src="/img/aires/+6k.png" alt=""></a></div>
     </main>
     <footer class="footer">
         <a href="#"><img src="./img/wpp.png" alt=""></a>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
