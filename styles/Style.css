@@ -210,21 +210,6 @@ nav ul li a{
     align-items: flex-end;
     justify-content: space-between;
 }
-/*Sobre nosotros;flex
-.nosotros1{
-    display: flex;
-}
-.nosotrosInfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    
-}
-.nosotrosLogo{
-    display: flex;
-    flex-direction: row;
-}*/
 /*Footer con flex*/
 .footer{
     display: flex;
@@ -340,7 +325,6 @@ nav ul li a{
                              "a25k a3k" 
                              "a35k a4k"
                              "a5k a6k";
-        
     }
     .a25k img{
         width: 134px;
@@ -423,33 +407,6 @@ nav ul li a{
     .pregunta2 h3{
         max-width: 530px;
         width: 100%;
-    }
-    .fondoLogin{
-        background-color: black;
-    }
-    .login1 div{
-        background-color: black;
-    }
-    .login1 h1{
-        background-color: black;
-    }
-    .login1 div span form{
-        background-color: black;
-    }
-    .login1 div span form h2{
-        background-color: black;
-    }
-    .login1{
-        margin-left: 0px;
-        background-color: black;
-        text-align: start;
-        max-width: fit-content;
-    }
-    .login1 img{
-        background-color: black;
-    }
-    .todoLogin{
-        background-color: black;
     }
     .fa-whatsapp{
         font-size: 2em;
