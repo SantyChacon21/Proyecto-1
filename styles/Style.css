@@ -408,11 +408,6 @@ nav ul li a{
     .nosotrosIconos a img{
         max-height: 3rem;
     }
-    .preguntaGeneral{
-        display: flex;
-        justify-content: center;
-        
-    }
     .pregunta1{
         display: flex;
         max-width: fit-content;
