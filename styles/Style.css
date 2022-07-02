@@ -238,11 +238,6 @@ nav ul li a{
     justify-content: center;
     align-items: center;
 }
-.pregunta1{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
 .pregunta1 h2{
     background-color: rgba(117, 159, 188, 1);
     text-align: center;
@@ -413,8 +408,14 @@ nav ul li a{
     .nosotrosIconos a img{
         max-height: 3rem;
     }
+    .preguntaGeneral{
+        display: flex;
+        justify-content: center;
+        
+    }
     .pregunta1{
         display: flex;
+        max-width: fit-content;
         justify-content: center;
     }
     .pregunta1 h2{
