@@ -241,6 +241,7 @@ nav ul li a{
 .pregunta1{
     display: flex;
     justify-content: center;
+    align-content: center;
 }
 .pregunta1 h2{
     background-color: rgba(117, 159, 188, 1);
@@ -414,7 +415,6 @@ nav ul li a{
     }
     .pregunta1{
         display: flex;
-        max-width: fit-content;
         justify-content: center;
     }
     .pregunta1 h2{
