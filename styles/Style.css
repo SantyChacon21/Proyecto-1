@@ -410,7 +410,6 @@ nav ul li a{
     }
     .pregunta1{
         display: flex;
-        max-width: fit-content;
         justify-content: center;
     }
     .pregunta1 h2{
