@@ -1,0 +1,201 @@
+@media(max-width: 568px){
+    .contenedor--main{
+        grid-template-columns: map-get($map: $cont2C4R, $key: 'columns');
+        grid-template-rows: map-get($map: $cont2C4R, $key: 'rows');
+        grid-template-areas: "presupuesto presupuesto"
+                             "aire heladera" 
+                             "freezer camara"
+                             "auto vertodo";
+    }
+    .logo {
+        width: 50%;
+    }
+    .presupuesto{
+        a{
+            img{
+                max-width: 100%;
+                margin: 10px;
+            }
+        }
+    }
+    
+    .aire{
+        img{
+            width: 134px;
+            height: 105px;
+        }
+    }
+    .fueraAire{
+        justify-content: flex-end;
+    }
+    .heladera{
+        img{
+            width: 134px;
+            height: 105px;
+        }
+    }
+    .fueraHeladera{
+        justify-content: flex-start;
+    }
+    .freezer{
+        img{
+            width: 134px;
+            height: 105px;
+        }
+    }
+    .fueraFreezer{
+        justify-content: end;
+    }
+    .camara{
+        img{
+            width: 134px;
+            height: 105px;
+        }
+    }
+    .fueraCamara{
+        justify-content: flex-start;
+    }
+    .auto{
+        img{
+            width: 134px;
+            height: 105px;
+            justify-content: flex-end;
+        }
+    }
+    .fueraAuto{
+        justify-content: flex-end;
+    }
+    .vertodo{
+        img{
+            width: 134px;
+            height: 105px;
+        }
+    }
+    .fueraVertodo{
+        justify-content: flex-start;
+    }
+    .footer{
+        a{
+            img{
+                width: 65%;
+            }
+        }
+    }
+    .contenedorAires{
+        grid-template-columns: map-get($map: $cont2C4R, $key: 'columns');
+        grid-template-rows: map-get($map: $cont2C4R, $key: 'rows');
+        grid-template-areas: "presupuesto presupuesto"
+                             "a25k a3k" 
+                             "a35k a4k"
+                             "a5k a6k";
+    }
+    .a25k{
+        img{
+            width: 134px;
+            height: 105px;
+        }
+    }
+    .a25k{
+        justify-content: flex-end;
+    }
+    .a3k{
+        img{
+            width: 134px;
+            height: 105px;
+        }
+    }
+    .a3k{
+        justify-content: flex-start;
+    }
+    .a35k{
+        img{
+            width: 134px;
+            height: 105px;
+        }
+    }
+    .a35k{
+        justify-content: end;
+    }
+    .a4k{
+        img{
+            width: 134px;
+            height: 105px;
+        }
+    }
+    .a4k{
+        justify-content: flex-start;
+    }
+    .a5k{
+        img{
+            width: 134px;
+            height: 105px;
+            justify-content: flex-end;
+        }
+    }
+    .a5k{
+        justify-content: flex-end;
+    }
+    .a6k{
+        img{
+            width: 134px;
+            height: 105px;
+        }
+    }
+    .a6k{
+        justify-content: flex-start;
+    }
+    .nav{
+        ul{
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+    }
+    .nosotros1{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding-top: 40px;
+    }
+    .nosotrosFoto{
+        display: flex;
+        justify-content: center;
+    }
+    .nosotrosFoto{
+        img{
+            max-width: 353px;
+        }
+    }
+    .nosotrosIconos{
+        justify-content: space-evenly;
+    }
+    .nosotrosIconos{
+        a{
+            img{
+                max-height: 3rem;
+            }
+        }
+    }
+    .pregunta1{
+        display: flex;
+        justify-content: center;
+    }
+    .pregunta1{
+        h2{
+            max-width: 530;
+            width: 100%;
+        }
+    }
+    .pregunta2{
+        display: flex;
+        justify-content: center;
+    }
+    .pregunta2{
+        h3{
+            max-width: 530px;
+            width: 100%;
+        }
+    }
+    .fa-whatsapp{
+        font-size: 2em;
+    }
+}

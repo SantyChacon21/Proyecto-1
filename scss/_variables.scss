@@ -1,0 +1,22 @@
+$flexNavBar:(
+    'display':flex,
+    'justify':space-between,
+    'align': center
+);
+$cont3C3R:(
+    'grid': grid,
+    'colums': repeat(3, 1fr),
+    'rows': repeat(3, 1fr),
+    'gapCol': 10px,
+    'gapRow': 15px
+);
+$centrar:(
+    'flex':flex,
+    'centro': center,
+    'final':end,
+    'comienzo':start
+);
+$cont2C4R:(
+    'columns':repeat(2, 1fr),
+    'rows': repeat(4, 1fr)
+);

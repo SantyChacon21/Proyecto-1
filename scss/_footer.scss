@@ -1,0 +1,5 @@
+.footer{
+    display: map-get($map: $centrar, $key:'flex' );
+    justify-content: map-get($map: $centrar, $key: 'final');
+    margin-right: 15px;
+}

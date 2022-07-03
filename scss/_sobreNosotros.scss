@@ -1,0 +1,27 @@
+.nosotros1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: map-get($map: $cont3C3R , $key: 'rows' );
+    grid-template-areas:"foto nosotros"
+                        "foto texto"
+                        "foto iconos";
+}
+.nosotrosFoto{
+    grid-area: foto;
+}
+.nosotrosTitulo{
+    grid-area:nosotros;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.nosotrosTexto{
+    grid-area:texto;
+    text-align: map-get($map: $centrar, $key: 'final' );
+}
+.nosotrosIconos{
+    grid-area: iconos;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
