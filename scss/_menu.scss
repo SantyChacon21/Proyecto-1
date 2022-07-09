@@ -12,11 +12,7 @@
     grid-row-gap: map-get($map: $cont3C3R, $key:'gapRow' );
 }
 .contenedorAires{
-    display: map-get($map: $cont3C3R, $key:'grid' );
-    grid-template-columns: map-get($map: $cont3C3R, $key:'columns' );
-    grid-template-rows: map-get($map: $cont3C3R, $key:'rows' );
-    grid-column-gap: map-get($map: $cont3C3R, $key:'gapCol' );
-    grid-row-gap: map-get($map: $cont3C3R, $key:'gapRow' );
+    @extend .contenedor--main;
     grid-template-areas: "presupuesto presupuesto presupuesto"
                          "a25k a3k a35k"
                          "a4k a5k a6k";
@@ -68,72 +64,63 @@
     max-width: fit-content;
 }
 .fueraCamara{
-    display: map-get($map: $centrar, $key:'flex' );
-    justify-content: map-get($map: $centrar, $key: 'final');
+    @extend .fueraAire;
 }
 .camara{
     grid-area: camara;
     max-width: max-content;
 }
 .fueraAuto{
-    display: map-get($map: $centrar, $key:'flex' );
-    justify-content: map-get($map: $centrar, $key: 'centro');
+    @extend .fueraHeladera;
 }
 .auto{
     grid-area: auto;
     max-width: max-content;
 }
 .fueraVertodo{
-    display: map-get($map: $centrar, $key:'flex' );
-    justify-content: map-get($map: $centrar, $key: 'comienzo');
+    @extend .fueraFreezer;
 }
 .vertodo{
     grid-area: vertodo;
     max-width: max-content;
 }
 .a25k{
-    display: map-get($map: $centrar, $key: 'flex');
-    justify-content: map-get($map: $centrar, $key: 'final');
+    @extend .fueraAire;
 }
 .dentro25k{
     grid-area: a25k;
     max-width: fit-content;
 }
 .a3k{
-    display: map-get($map: $centrar, $key: 'flex');
-    justify-content: map-get($map: $centrar, $key:'centro');
+    @extend .fueraHeladera;
 }
 .dentro3k{
     grid-area: a3k;
     max-width: fit-content;
 }
 .a35k{
-    display: map-get($map: $centrar, $key:'flex' );
-    justify-content: map-get($map: $centrar, $key: 'comienzo');
+    @extend .fueraFreezer;
 }
 .dentro35k{
     grid-area: a35k;
     max-width: fit-content;
 }
 .a4k{
-    display: map-get($map: $centrar, $key: 'flex');
-    justify-content: map-get($map: $centrar, $key: 'final');
+    @extend .fueraAire;
 }
 .dentro4k{
     grid-area: a4k;
     max-width: fit-content;
 }
 .a5k{
-    display: map-get($map: $centrar, $key: 'flex');
-    justify-content: map-get($map: $centrar, $key:'centro');
+    @extend .fueraHeladera;
 }
 .dentro5k{
     grid-area: a5k;
     max-width: fit-content;
 }
 .a6k{
-    display: map-get($map: $centrar, $key:'flex' );
-    justify-content: map-get($map: $centrar, $key: 'comienzo');
+    @extend .fueraFreezer;
 
 }
 .dentro6k{

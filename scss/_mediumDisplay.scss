@@ -1,3 +1,4 @@
+@import 'variables';
 @media(max-width: 568px){
     .contenedor--main{
         grid-template-columns: map-get($map: $cont2C4R, $key: 'columns');
@@ -82,8 +83,7 @@
         }
     }
     .contenedorAires{
-        grid-template-columns: map-get($map: $cont2C4R, $key: 'columns');
-        grid-template-rows: map-get($map: $cont2C4R, $key: 'rows');
+        @extend .contenedor--main;
         grid-template-areas: "presupuesto presupuesto"
                              "a25k a3k" 
                              "a35k a4k"
@@ -176,8 +176,7 @@
         }
     }
     .pregunta1{
-        display: flex;
-        justify-content: center;
+        @include centrado(flex, center, none);
     }
     .pregunta1{
         h2{
@@ -186,8 +185,7 @@
         }
     }
     .pregunta2{
-        display: flex;
-        justify-content: center;
+        @include centrado(flex, center, none);
     }
     .pregunta2{
         h3{

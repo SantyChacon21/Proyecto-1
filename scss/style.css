@@ -1,4 +1,4 @@
-.contenedor--main {
+.contenedor--main, .contenedorAires {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "presupuesto presupuesto presupuesto" "aire heladera freezer" "camara auto vertodo";
@@ -7,10 +7,6 @@
 }
 
 .contenedorAires {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
   grid-template-areas: "presupuesto presupuesto presupuesto" "a25k a3k a35k" "a4k a5k a6k";
 }
 
@@ -38,7 +34,7 @@
   transform: scale(1.1);
 }
 
-.fueraAire {
+.fueraAire, .a4k, .a25k, .fueraCamara {
   display: flex;
   justify-content: end;
 }
@@ -48,7 +44,7 @@
   max-width: fit-content;
 }
 
-.fueraHeladera {
+.fueraHeladera, .a5k, .a3k, .fueraAuto {
   display: flex;
   justify-content: center;
 }
@@ -58,7 +54,7 @@
   max-width: fit-content;
 }
 
-.fueraFreezer {
+.fueraFreezer, .a6k, .a35k, .fueraVertodo {
   display: flex;
   justify-content: start;
 }
@@ -68,19 +64,9 @@
   max-width: fit-content;
 }
 
-.fueraCamara {
-  display: flex;
-  justify-content: end;
-}
-
 .camara {
   grid-area: camara;
   max-width: max-content;
-}
-
-.fueraAuto {
-  display: flex;
-  justify-content: center;
 }
 
 .auto {
@@ -88,19 +74,9 @@
   max-width: max-content;
 }
 
-.fueraVertodo {
-  display: flex;
-  justify-content: start;
-}
-
 .vertodo {
   grid-area: vertodo;
   max-width: max-content;
-}
-
-.a25k {
-  display: flex;
-  justify-content: end;
 }
 
 .dentro25k {
@@ -108,19 +84,9 @@
   max-width: fit-content;
 }
 
-.a3k {
-  display: flex;
-  justify-content: center;
-}
-
 .dentro3k {
   grid-area: a3k;
   max-width: fit-content;
-}
-
-.a35k {
-  display: flex;
-  justify-content: start;
 }
 
 .dentro35k {
@@ -128,29 +94,14 @@
   max-width: fit-content;
 }
 
-.a4k {
-  display: flex;
-  justify-content: end;
-}
-
 .dentro4k {
   grid-area: a4k;
   max-width: fit-content;
 }
 
-.a5k {
-  display: flex;
-  justify-content: center;
-}
-
 .dentro5k {
   grid-area: a5k;
   max-width: fit-content;
-}
-
-.a6k {
-  display: flex;
-  justify-content: start;
 }
 
 .dentro6k {
@@ -225,7 +176,7 @@
 }
 
 @media (max-width: 568px) {
-  .contenedor--main {
+  .contenedor--main, .contenedorAires {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "presupuesto presupuesto" "aire heladera" "freezer camara" "auto vertodo";
@@ -245,7 +196,7 @@
     height: 105px;
   }
 
-  .fueraAire {
+  .fueraAire, .fueraCamara, .a25k, .a4k {
     justify-content: flex-end;
   }
 
@@ -254,7 +205,7 @@
     height: 105px;
   }
 
-  .fueraHeladera {
+  .fueraHeladera, .fueraAuto, .a3k, .a5k {
     justify-content: flex-start;
   }
 
@@ -263,7 +214,7 @@
     height: 105px;
   }
 
-  .fueraFreezer {
+  .fueraFreezer, .fueraVertodo, .a35k, .a6k {
     justify-content: end;
   }
 
@@ -300,8 +251,6 @@
   }
 
   .contenedorAires {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: "presupuesto presupuesto" "a25k a3k" "a35k a4k" "a5k a6k";
   }
 
@@ -392,6 +341,7 @@
   .pregunta1 {
     display: flex;
     justify-content: center;
+    align-items: none;
   }
 
   .pregunta1 h2 {
@@ -402,6 +352,7 @@
   .pregunta2 {
     display: flex;
     justify-content: center;
+    align-items: none;
   }
 
   .pregunta2 h3 {
