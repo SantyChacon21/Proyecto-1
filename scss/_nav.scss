@@ -1,0 +1,26 @@
+//variables
+@import 'variables';
+
+nav{
+    ul{
+        li{
+            padding: 0px 24px;
+            list-style: none;
+            text-align: center;
+            display: inline-block;
+            a{
+                border-radius: 10px;
+                text-decoration: none;
+                color: rgb(250, 250, 250);
+                display: block;
+                width: 144px;
+                height: 26px;
+            }
+        }
+    }
+}
+.nav{
+    display: map-get($map: $flexNavBar, $key: 'display' );
+    justify-content: map-get($map: $flexNavBar, $key: 'justify' );
+    align-items: map-get($map: $flexNavBar, $key: 'align' );
+}
